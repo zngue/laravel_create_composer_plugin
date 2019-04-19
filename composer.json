@@ -1,0 +1,31 @@
+{
+    "name": "zngue/laravel_create_composer_plugin",
+    "description": "Laravel composer包创建",
+    "type": "library",
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "5.*",
+        "consoletvs/support": "^2.2.0",
+        "composer/composer": "^1.5.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zngue",
+            "email": "zngfue@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ConsoleTVs\\Bootpack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConsoleTVs\\Bootpack\\BootpackServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
