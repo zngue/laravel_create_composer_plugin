@@ -1,6 +1,6 @@
 {
     "name": "zngue/laravel_create_composer_plugin",
-    "description": "Laravel composer包创建",
+    "description": "Laravel composer自动创建包，让你不在为开发而烦恼，轻轻松松创建自己的包",
     "type": "library",
     "require": {
         "php": ">=7.2",

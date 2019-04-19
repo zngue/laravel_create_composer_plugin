@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-composer require consoletvs/bootpack
+composer require zngue/laravel_create_composer_plugin
 ```
 
 Register the service provider to the current project (Not needed if using laravel 5.5+):
