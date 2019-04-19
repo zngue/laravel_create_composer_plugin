@@ -23,7 +23,6 @@ php artisan vendor:publish
 
 Can't be more simple... rename test/package to the vendor/packagename notation you wish to create.
 
-Example: consoletvs/bootpack
 
 ```
 php artisan zng:add test/package
