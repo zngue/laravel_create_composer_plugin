@@ -25,11 +25,11 @@ class {{ UCNAME }}ServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/Routes/api.php');
         $this->loadMigrationsFrom(__DIR__ . '/Migrations');
 
-        $this->loadTranslationsFrom(__DIR__ . '/Translations', '{{ NAME }}');
+       // $this->loadTranslationsFrom(__DIR__ . '/Translations', '{{ NAME }}');
 
-        $this->publishes([
+        /*$this->publishes([
             __DIR__ . '/Translations' => resource_path('lang/vendor/{{ NAME }}'),
-        ]);
+        ]);*/
 
         $this->loadViewsFrom(__DIR__ . '/Views', '{{ NAME }}');
 
@@ -40,12 +40,12 @@ class {{ UCNAME }}ServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/Assets' => public_path('vendor/{{ NAME }}'),
         ], '{{ NAME }}_assets');
-
+		/*
         if ($this->app->runningInConsole()) {
             $this->commands([
                 \{{ NAMESPACE }}\Commands\{{ UCNAME }}Command::class,
             ]);
-        }
+        }*/
     }
 
     /**
